@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import '../style/Header.css'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Header() {
     const [show, handleShow] = useState(false); 
@@ -33,6 +33,10 @@ function Header() {
                 <h3 className="banner__subtext">I'm a full stack developer.</h3>
                 <div className="socials">
                     {/* Social media links */}
+                    <a href="https://github.com/daogena"><FontAwesomeIcon icon={['fab', 'github']} size="2x"/></a>
+                    <a href="https://www.facebook.com/gena.dao"><FontAwesomeIcon icon={['fab', 'facebook-f']} size="2x" /></a>
+                    <a href="https://www.instagram.com/daamn_gena/"><FontAwesomeIcon icon={['fab', 'instagram']} size="2x" /></a>
+                    <a href="https://www.linkedin.com/in/gena-dao-035574122/"><FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" /></a>
                 </div>
             </div>
             <div className="header--fadeBottom" />
