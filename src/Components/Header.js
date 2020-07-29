@@ -19,7 +19,7 @@ function Header() {
     }, []); 
 
     return (
-        <div className="header">
+        <div id="home">
             <div className={`nav ${show && "nav__solid"}`}>
                 <div className="current">
                     <a href="#home" className="smoothscroll">Home</a>
