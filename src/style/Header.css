@@ -23,7 +23,8 @@
 }
 
 .nav__solid {
-    background-color: #CCAAC2; 
+    background-color: #CCAAC2;
+    box-shadow: 0px 2px 10px rgba(134, 133, 133, 0.75); 
 }
 
 
