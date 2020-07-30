@@ -1,26 +1,13 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import '../style/Header.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Header() {
-    const [show, handleShow] = useState(false); 
-
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
-                handleShow(true); 
-            } else {
-                handleShow(false); 
-            }
-        }); 
-        return () => {
-            window.removeEventListener("scroll"); 
-        }; 
-    }, []); 
 
     return (
         <div id="home">
-            <div className={`nav ${show && "nav__solid"}`}>
+            <div className="nav">
+                <div className="blur"></div>
                 <div className="current">
                     <a href="#home" className="smoothscroll">Home</a>
                 </div>
