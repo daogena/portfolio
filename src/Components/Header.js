@@ -20,12 +20,13 @@ function Header() {
 
     return (
         <div id="home">
+            <div className="background"></div>
             <div className={`nav ${show && "nav__black"}`}>
                 <div className="current">
                     <a href="#home" className="smoothscroll">Home</a>
                 </div>
                 <div><a href="#about" className="smoothscroll">About</a></div>
-                <div><a href="#portfolio" className="smoothscroll">Work</a></div>
+                <div><a href="#work" className="smoothscroll">Work</a></div>
                 <div><a href="#contact" className="smoothscroll">Contact</a></div>
             </div>
             <div className="banner">
@@ -39,7 +40,6 @@ function Header() {
                     <a href="https://www.linkedin.com/in/gena-dao-035574122/"><FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x" /></a>
                 </div>
             </div>
-            <div className="header--fadeBottom" />
         </div>
     )
 }
