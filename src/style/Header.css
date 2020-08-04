@@ -39,6 +39,10 @@ a {
     font-weight: bold;
 }
 
+.link {
+    cursor: pointer; 
+}
+
 .banner {
     position: absolute; 
     align-self: center;

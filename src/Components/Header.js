@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import '../style/Header.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-scroll'; 
 
 function Header() {
     const [show, handleShow] = useState(false); 
@@ -16,24 +17,63 @@ function Header() {
         return () => {
             window.removeEventListener("scroll"); 
         }; 
-    }, []); 
+    }, []);
+    
+    
 
     return (
         <div id="home">
             <div className="background"></div>
             <div className={`nav ${show && "nav__black"}`}>
-                <div className="current">
-                    <a href="#home" className="smoothscroll">Home</a>
+                <div className="link">
+                    <Link 
+                        activeClass="active"
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                    >
+                        Home
+                    </Link>
                 </div>
-                <div><a href="#about" className="smoothscroll">About</a></div>
-                <div><a href="#work" className="smoothscroll">Work</a></div>
-                <div><a href="#contact" className="smoothscroll">Contact</a></div>
+                <div className="link">
+                    <Link
+                        activeClass="active"
+                        to="about"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                    >
+                        About
+                    </Link>
+                </div>
+                <div className="link">
+                    <Link
+                        activeClass="active"
+                        to="work"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                    >
+                        Work
+                    </Link>
+                </div>
+                <div className="link">
+                    <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                    >
+                        Contact
+                    </Link>
+                </div>
             </div>
             <div className="banner">
                 <h1 className="banner__headline">Hi, I'm Gena.</h1>
                 <h3 className="banner__subtext">I'm a full stack developer.</h3>
                 <div className="socials">
-                    {/* Social media links */}
                     <a href="https://github.com/daogena"><FontAwesomeIcon icon={['fab', 'github']} size="2x"/></a>
                     <a href="https://www.facebook.com/gena.dao"><FontAwesomeIcon icon={['fab', 'facebook-f']} size="2x" /></a>
                     <a href="https://www.instagram.com/daamn_gena/"><FontAwesomeIcon icon={['fab', 'instagram']} size="2x" /></a>
