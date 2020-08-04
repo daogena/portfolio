@@ -1,0 +1,97 @@
+#contact {
+    background-color: #212121; 
+    color: white; 
+    padding: 75px; 
+}
+
+.contact__section {
+    display: flex; 
+}
+
+form {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; 
+    font-size: 18px; 
+    width: 60%; 
+}
+
+.contact__info {
+    width: 40%; 
+}
+
+input:focus, textarea:focus {
+    outline: none; 
+}
+
+#name, #email {
+    width: 500px; 
+    height: 30px; 
+    padding: 10px; 
+    margin-top: 20px; 
+
+    background-color: #47443e;
+    border: #47443e; 
+    color: white; 
+
+    font-family: monospace; 
+}
+
+#message {
+    height: 200px; 
+    width: 500px; 
+    padding: 10px; 
+    margin-top: 20px; 
+
+    background-color: #47443e;
+    border: #47443e; 
+    color: white; 
+}
+
+button {
+    margin-top: 30px; 
+    padding: 15px 40px; 
+    border: 2px solid white; 
+    border-radius: 8px; 
+    background-color: white; 
+    font-weight: bold; 
+    font-size: 17px;
+    outline: none;  
+}
+
+button:hover {
+    transform: translate3d(0, -5, 0); 
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.25s ease; 
+    cursor: pointer;  
+    background-color: #212121; 
+    color: white; 
+}
+
+.contact__info {
+    margin-top: 100px; 
+}
+
+.title {
+    font-weight: bold;
+    margin-top: 30px; 
+}
+
+.resume__button {
+    margin-top: 30px; 
+    padding: 15px 20px; 
+    width: 20%; 
+    margin-left: 140px; 
+    border: 2px solid #47443e; 
+    border-radius: 8px; 
+}
+
+.resume__button:hover {
+    transform: translate3d(0, -5, 0); 
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.25s ease; 
+    cursor: pointer;  
+    background-color: #47443e; 
+    color: black; 
+}
