@@ -1,23 +1,33 @@
+@media screen and (min-width: 700px) {
+    .columns:not(.is-desktop) {
+        display: flex; 
+    }
+    /* #about {
+        max-width: 1152px; 
+    } */
+}
+
 #about {
     background-color: #212121; 
-    padding: 75px;
     display: flex;  
-    justify-content: space-evenly;
     object-fit: contain;
+    padding: 30px; 
+}
+
+.columns {
+    align-items: center;
 }
 
 .text {
-    width: 60%; 
-    text-align: left;
-    padding: 10px 40px; 
+    padding: 10px; 
 }
 
-.about__container {
-    padding: 40px 50px; 
-}
-
-.skills__container {
-    padding: 50px 50px; 
+.profile-pic, .text {
+    text-align: center;
+    display: block; 
+    flex-basis: 0; 
+    flex-grow: 1; 
+    flex-shrink: 1; 
 }
 
 .skills {
@@ -26,13 +36,11 @@
     padding-top: 20px; 
 }
 
-.profile-pic {
-    width: 150px; 
-    height: 150px; 
-    border-radius: 50%; 
-    background-image: url(../profile-pic.jpg); 
-    background-size: cover; 
+img {
+    width: 40%; 
+    border-radius: 100%; 
     margin: 100px 50px; 
+    object-fit: contain;
 }
 
 .title {
