@@ -1,6 +1,6 @@
 #work {
     background-color: #47443e;
-    padding: 75px;
+    padding: 30px;
     color: white;  
 }
 
@@ -12,10 +12,12 @@
 }
 
 .project1__image {
-    background-image: url(../project1.png); 
-    height: 200px; 
-    width: 400px; 
-    background-size: cover; 
+    width: 20rem; 
+}
+
+.project1__image img {
+    width: 100%; 
+    object-fit: contain; 
 }
 
 .project__title {
@@ -40,10 +42,3 @@
     background-color: white; 
     color: black; 
 }
-
-/* .project1__image:hover {
-    transform: translate3d(0, -5, 0); 
-    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
-    transition: all 0.25s ease; 
-    cursor: pointer; 
-} */
