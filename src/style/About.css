@@ -1,20 +1,18 @@
-@media screen and (min-width: 700px) {
-    .columns:not(.is-desktop) {
-        display: flex; 
+/* For mobile phones */
+@media only screen and (max-width: 768px) {
+    .columns {
+        flex-direction: column;
     }
-    /* #about {
-        max-width: 1152px; 
-    } */
 }
 
 #about {
     background-color: #212121; 
-    display: flex;  
     object-fit: contain;
     padding: 30px; 
 }
 
 .columns {
+    display: flex; 
     align-items: center;
 }
 
@@ -39,7 +37,7 @@
 img {
     width: 40%; 
     border-radius: 100%; 
-    margin: 100px 50px; 
+    /* margin: 100px 50px;  */
     object-fit: contain;
 }
 
