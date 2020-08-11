@@ -1,3 +1,13 @@
+/* For mobile phones */
+@media only screen and (max-width: 768px) {
+    .nav, .nav__black {
+        width: auto; 
+        overflow-x: hidden;
+        flex-basis: 0; 
+        flex-grow: 1; 
+        flex-shrink: 1; 
+    }
+}
 
 #home {
     display: flex; 

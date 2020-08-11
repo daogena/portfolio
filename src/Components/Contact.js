@@ -4,8 +4,6 @@ import pdf from '../Resume.pdf';
 import db from '../firebase'; 
 
 function Contact() {
-    // const [input, setInput] = useState([]); 
-
     const[name, setName] = useState(""); 
     const[email, setEmail] = useState(""); 
     const [message, setMessage] = useState(""); 
@@ -60,10 +58,8 @@ function Contact() {
                         <div className="title">Phone Number</div>
                         <div className="description">(609) 432-3435</div>
                     </div>
-                    <div className="resume">
-                        <div className="resume__button">
-                            <a href={pdf} target="_blank" rel="noopener noreferrer">Resume</a> 
-                        </div>
+                    <div className="resume__button">
+                        <a href={pdf} target="_blank" rel="noopener noreferrer">Resume</a> 
                     </div>
                 </div>
             </div>

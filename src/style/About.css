@@ -34,10 +34,9 @@
     padding-top: 20px; 
 }
 
-img {
+.profile-pic img {
     width: 40%; 
     border-radius: 100%; 
-    /* margin: 100px 50px;  */
     object-fit: contain;
 }
 
