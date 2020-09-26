@@ -1,7 +1,20 @@
+/* For mobile phones */
+@media only screen and (max-width: 768px) {
+    .project__containers {
+        flex-direction: column;
+    }
+}
+
 #work {
     background-color: #47443e;
-    padding: 30px;
+    padding: 75px;
     color: white;  
+}
+
+.project__containers {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
 }
 
 .project__container {
@@ -11,11 +24,11 @@
     align-items: center;
 }
 
-.project1__image {
+.project1__image, .project2__image {
     width: 20rem; 
 }
 
-.project1__image img {
+.project1__image img, .project2__image img {
     width: 100%; 
     object-fit: contain; 
 }
